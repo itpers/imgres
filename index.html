@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8" />
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
+    <title>本地跳转测试</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue",
+                Helvetica, Arial, sans-serif;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 16px;
+            margin-bottom: 16px;
+            font-size: 16px;
+            text-align: center;
+            border-radius: 8px;
+            border: none;
+            color: #fff;
+            background-color: #3b82f6;
+            cursor: pointer;
+        }
+
+        .btn:active {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+
+    <button class="btn" onclick="openH5()">
+        打开 H5 页面
+    </button>
+
+    <button class="btn" onclick="openSpringFestival()">
+        打开新春活动
+    </button>
+
+    <button class="btn" onclick="openPlaceholder()">
+        第三个按钮（占位）
+    </button>
+
+    <script>
+        function openH5() {
+            location.href =
+                'copilot://dplinkactivity?jump_type=4&jump_source=com.android.systemui&jump_page={"type":"webUrl","page":"https%3A%2F%2Fbluexiaov-pre2.vivo.com.cn%2Fm%2Factivity%2Fannual%2Freport%3FisImmersive%3D1%26isShowProgressbar%3D0%26isNotLandscape%3D1%26isAutoPlay%3D1","extra":{}}&mark=2026新春活动&need_login=0';
+        }
+
+        function openSpringFestival() {
+            location.href =
+                'copilot://dplinkactivity/openSpringFestival?jump_page=openSpringFestival';
+        }
+
+        function openPlaceholder() {
+            alert('这里可以替换成你的第三个跳转链接');
+        }
+    </script>
+
+</body>
+</html>
